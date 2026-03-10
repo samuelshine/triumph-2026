@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* Additional RUSH Utilities */
+@layer utilities {
+  /* You can add custom utilities here if Tailwind doesn't suffice */
+}
