@@ -25,9 +25,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full flex justify-between items-start uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
+          className="w-full flex justify-between items-center uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
         >
-          <p>City Harvest Presents</p>
+          <div className="flex items-center gap-3">
+            <img src="/ch-logo-white.png" alt="City Harvest" className="h-7 md:h-9 w-auto opacity-60 brightness-75" />
+            <span>City Harvest Presents</span>
+          </div>
           <p className="text-right">A Call For<br />True Worshipers</p>
         </motion.div>
 
