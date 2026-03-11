@@ -21,12 +21,54 @@ export default function InviteForm() {
     setChannel(source);
   }, []);
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === 'name') {
+      // Only allow letters, spaces, and periods
+      const cleaned = value.replace(/[^a-zA-Z\s.]/g, '');
+      setFormData({ ...formData, name: cleaned });
+      if (errors.name) setErrors(prev => ({ ...prev, name: '' }));
+      return;
+    }
+
+    if (name === 'phone') {
+      // Only allow digits, max 10
+      const cleaned = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({ ...formData, phone: cleaned });
+      if (errors.phone) setErrors(prev => ({ ...prev, phone: '' }));
+      return;
+    }
+
+    if (name === 'email') {
+      setFormData({ ...formData, email: value });
+      if (errors.email) setErrors(prev => ({ ...prev, email: '' }));
+      return;
+    }
+
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.name.trim() || formData.name.trim().length < 2) {
+      newErrors.name = 'Please enter a valid name';
+    }
+    if (formData.phone.length !== 10) {
+      newErrors.phone = 'Phone number must be exactly 10 digits';
+    }
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validate()) return;
     setLoading(true);
 
     try {
@@ -99,7 +141,7 @@ export default function InviteForm() {
           </div>
 
           {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8" noValidate>
               <div>
                 <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-3">Full Name</label>
                 <input 
@@ -108,9 +150,10 @@ export default function InviteForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
+                  className={`w-full bg-rush-black border-2 ${errors.name ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
                   placeholder="JOHN DOE"
                 />
+                {errors.name && <p className="text-rush-red text-xs mt-2 uppercase tracking-wider">{errors.name}</p>}
               </div>
               
               <div>
@@ -120,10 +163,15 @@ export default function InviteForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  inputMode="numeric"
+                  maxLength={10}
                   required
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
-                  placeholder="+91 98765 43210"
+                  className={`w-full bg-rush-black border-2 ${errors.phone ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
+                  placeholder="9876543210"
                 />
+                <p className={`text-xs mt-2 uppercase tracking-wider ${errors.phone ? 'text-rush-red' : 'text-white/30'}`}>
+                  {errors.phone || `${formData.phone.length}/10 digits`}
+                </p>
               </div>
 
               <div>
@@ -133,9 +181,10 @@ export default function InviteForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
+                  className={`w-full bg-rush-black border-2 ${errors.email ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
                   placeholder="JOHN@EXAMPLE.COM"
                 />
+                {errors.email && <p className="text-rush-red text-xs mt-2 uppercase tracking-wider">{errors.email}</p>}
               </div>
 
               <button 
