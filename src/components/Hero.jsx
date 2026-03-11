@@ -25,7 +25,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full flex justify-between items-start uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
+          className="absolute top-10 left-4 right-4 md:static md:w-full flex justify-between items-start uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
         >
           <p>City Harvest Presents</p>
           <p className="text-right">A Call For<br />True Worshipers</p>
