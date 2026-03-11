@@ -4,7 +4,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         
         <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4">
-          <img src="/ch-logo-white.png" alt="City Harvest" className="h-8 w-auto opacity-60" />
+          <a href="https://cityharvestag.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+            <img src="/ch-logo-white.png" alt="City Harvest" className="h-8 w-auto opacity-60" />
+          </a>
           <div>
             <h2 className="font-heading text-3xl text-rush-red uppercase tracking-tighter mb-2">Triumph</h2>
             <p className="text-white/50 text-xs tracking-widest uppercase font-bold">Night of Worship 2026</p>

@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Narrative from './components/Narrative'
 import EventDetails from './components/EventDetails'
 import TheExperience from './components/TheExperience'
+import VideoShowcase from './components/VideoShowcase'
 import InviteForm from './components/InviteForm'
 import Footer from './components/Footer'
 import FloatingCTA from './components/FloatingCTA'
@@ -14,6 +15,7 @@ function App() {
       <Narrative />
       <EventDetails />
       <TheExperience />
+      <VideoShowcase />
       <InviteForm />
       <Footer />
       <FloatingCTA />

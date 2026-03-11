@@ -28,7 +28,9 @@ export default function Hero() {
           className="w-full flex justify-between items-center uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
         >
           <div className="flex items-center gap-3">
-            <img src="/ch-logo-white.png" alt="City Harvest" className="h-7 md:h-9 w-auto opacity-60 brightness-75" />
+            <a href="https://cityharvestag.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+              <img src="/ch-logo-white.png" alt="City Harvest" className="h-7 md:h-9 w-auto opacity-60 brightness-75" />
+            </a>
             <span className="md:hidden">City Harvest<br />Presents</span>
             <span className="hidden md:inline">City Harvest Presents</span>
           </div>
