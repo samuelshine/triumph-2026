@@ -54,7 +54,7 @@ export default function Hero() {
         {/* CTA and Info Grid Row */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 0.6, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mt-12"
         >
