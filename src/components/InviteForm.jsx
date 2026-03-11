@@ -108,7 +108,7 @@ export default function InviteForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white px-6 py-5 outline-none transition-colors duration-300 font-medium"
+                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
                   placeholder="JOHN DOE"
                 />
               </div>
@@ -121,7 +121,7 @@ export default function InviteForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white px-6 py-5 outline-none transition-colors duration-300 font-medium"
+                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
                   placeholder="+91 98765 43210"
                 />
               </div>
@@ -133,7 +133,7 @@ export default function InviteForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white px-6 py-5 outline-none transition-colors duration-300 font-medium"
+                  className="w-full bg-rush-black border-2 border-white/10 focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium"
                   placeholder="JOHN@EXAMPLE.COM"
                 />
               </div>
