@@ -29,7 +29,8 @@ export default function Hero() {
         >
           <div className="flex items-center gap-3">
             <img src="/ch-logo-white.png" alt="City Harvest" className="h-7 md:h-9 w-auto opacity-60 brightness-75" />
-            <span>City Harvest Presents</span>
+            <span className="md:hidden">City Harvest<br />Presents</span>
+            <span className="hidden md:inline">City Harvest Presents</span>
           </div>
           <p className="text-right">A Call For<br />True Worshipers</p>
         </motion.div>
