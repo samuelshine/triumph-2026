@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import Hero from './components/Hero'
 import Narrative from './components/Narrative'
 import EventDetails from './components/EventDetails'
@@ -14,6 +15,7 @@ function App() {
       <TheExperience />
       <InviteForm />
       <Footer />
+      <Analytics />
     </div>
   )
 }
