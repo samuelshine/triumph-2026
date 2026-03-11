@@ -5,6 +5,7 @@ import EventDetails from './components/EventDetails'
 import TheExperience from './components/TheExperience'
 import InviteForm from './components/InviteForm'
 import Footer from './components/Footer'
+import FloatingCTA from './components/FloatingCTA'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <TheExperience />
       <InviteForm />
       <Footer />
+      <FloatingCTA />
       <Analytics />
     </div>
   )
