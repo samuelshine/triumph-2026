@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end pt-20 pb-12 overflow-hidden bg-rush-black border-b border-white/10">
+    <section className="relative min-h-screen flex flex-col pt-8 md:pt-20 pb-12 overflow-hidden bg-rush-black border-b border-white/10">
       {/* Video Background with Heavy Black/Grayscale Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
@@ -18,14 +18,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-rush-black/80" />
       </div>
 
-      <div className="relative z-10 w-full px-4 md:px-12 flex flex-col items-start gap-12">
+      <div className="relative z-10 w-full flex-1 px-4 md:px-12 flex flex-col justify-between">
 
         {/* Top Meta Area */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="absolute top-10 left-4 right-4 md:static md:w-full flex justify-between items-start uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
+          className="w-full flex justify-between items-start uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
         >
           <p>City Harvest Presents</p>
           <p className="text-right">A Call For<br />True Worshipers</p>
