@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 export default function Narrative() {
   return (
-    <section className="py-24 md:py-40 px-4 bg-white text-rush-black border-b border-rush-black/10">
-      <div className="max-w-4xl mx-auto flex flex-col items-start">
+    <section className="py-24 md:py-40 px-4 bg-white text-rush-black border-b border-rush-black/10 bg-[url('/white-bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+      <div className="max-w-4xl mx-auto flex flex-col items-start relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
