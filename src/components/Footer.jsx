@@ -8,7 +8,7 @@ export default function Footer() {
             <img src="/ch-logo-white.png" alt="City Harvest" className="h-8 w-auto opacity-60" />
           </a>
           <div>
-            <h2 className="font-heading text-3xl text-rush-red uppercase tracking-tighter mb-2">Triumph</h2>
+            <h2 className="font-heading font-bold text-3xl text-rush-red uppercase tracking-tighter mb-2 [-webkit-text-stroke:1px_#FF2E00]">Triumph</h2>
             <p className="text-white/50 text-xs tracking-widest uppercase font-bold">Night of Worship 2026</p>
           </div>
         </div>
