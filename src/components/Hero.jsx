@@ -10,12 +10,12 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="absolute min-w-full min-h-full object-cover grayscale mix-blend-luminosity scale-105"
+          className="absolute min-w-full min-h-full object-cover scale-105"
         >
           <source src="/CITY-HARVEST-WORSHIP-BANNER.mp4" type="video/mp4" />
         </video>
-        {/* Stark darkening overlay */}
-        <div className="absolute inset-0 bg-rush-black/80" />
+        {/* Stark darkening overlay to keep text readable */}
+        <div className="absolute inset-0 bg-rush-black/60" />
       </div>
 
       <div className="relative z-10 w-full flex-1 px-4 md:px-12 flex flex-col justify-between">
@@ -43,7 +43,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-heading text-rush-red text-[16vw] leading-[0.8] tracking-tighter uppercase mb-4"
+            className="font-heading font-bold text-rush-red text-[16vw] leading-[0.8] tracking-tighter uppercase mb-4 [-webkit-text-stroke:2px_#FF2E00] md:[-webkit-text-stroke:4px_#FF2E00]"
           >
             TRIUMPH
           </motion.h1>
