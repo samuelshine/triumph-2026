@@ -15,13 +15,13 @@ export default function VideoShowcase() {
       >
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
-          <p className="text-rush-red text-xs md:text-sm font-bold uppercase tracking-widest mb-4">
+          <p className="text-rush-red text-xs md:text-sm font-montserrat font-bold uppercase tracking-widest mb-4">
             ── Relive the Moment
           </p>
           <h2 className="font-heading text-4xl md:text-6xl uppercase tracking-tighter text-white mb-4">
             Last Year's<br />Worship
           </h2>
-          <p className="text-white/50 text-sm md:text-base max-w-xl font-medium leading-relaxed">
+          <p className="text-white/50 text-sm md:text-base max-w-xl font-montserrat font-normal leading-relaxed">
             A glimpse of what God did when His people gathered in one accord. This year, we go even deeper.
           </p>
         </div>

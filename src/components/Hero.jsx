@@ -56,20 +56,20 @@ export default function Hero() {
           {/* Left: CTA */}
           <a
             href="#invite"
-            className="w-full md:w-auto flex items-center justify-center gap-6 bg-rush-red text-white font-black uppercase tracking-[0.2em] px-8 md:px-12 py-5 md:py-6 hover:bg-white hover:text-rush-black transition-all duration-500 group shadow-[0_20px_50px_rgba(218,131,7,0.3)] text-xs md:text-sm whitespace-nowrap"
+            className="w-full md:w-auto flex items-center justify-center gap-6 bg-rush-red text-white font-montserrat font-black uppercase tracking-[0.2em] px-8 md:px-12 py-5 md:py-6 hover:bg-white hover:text-rush-black transition-all duration-500 group shadow-[0_20px_50px_rgba(218,131,7,0.3)] text-xs md:text-sm whitespace-nowrap"
           >
             <span>Get Your Invite</span>
             <span className="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
           </a>
 
           {/* Right: Info */}
-          <div className="flex gap-12 md:gap-16 text-white uppercase text-base md:text-sm font-black tracking-[0.2em] text-center md:text-right">
+          <div className="flex gap-12 md:gap-16 text-white uppercase text-base md:text-sm font-montserrat font-black tracking-[0.2em] text-center md:text-right">
             <div>
-              <span className="block text-white/30 text-[10px] md:text-[11px] font-bold mb-1">Date</span>
+              <span className="block text-white/30 text-[10px] md:text-[11px] font-montserrat font-bold mb-1">Date</span>
               <span className="text-white">Mar 29</span>
             </div>
             <div>
-              <span className="block text-white/30 text-[10px] md:text-[11px] font-bold mb-1">Time</span>
+              <span className="block text-white/30 text-[10px] md:text-[11px] font-montserrat font-bold mb-1">Time</span>
               <span className="text-white">6:00 PM</span>
             </div>
           </div>

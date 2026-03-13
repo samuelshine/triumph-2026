@@ -143,21 +143,21 @@ export default function InviteForm() {
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-8" noValidate>
               <div>
-                <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-3">Full Name</label>
+                <label className="block text-xs font-montserrat font-bold text-white/50 uppercase tracking-widest mb-3">Full Name</label>
                 <input 
                   type="text" 
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className={`w-full bg-rush-black border-2 ${errors.name ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
+                  className={`w-full bg-rush-black border-2 ${errors.name ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-montserrat font-medium`}
                   placeholder="JOHN DOE"
                 />
-                {errors.name && <p className="text-rush-red text-xs mt-2 uppercase tracking-wider">{errors.name}</p>}
+                {errors.name && <p className="text-rush-red font-montserrat text-xs mt-2 uppercase tracking-wider">{errors.name}</p>}
               </div>
               
               <div>
-                <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-3">Phone Number</label>
+                <label className="block text-xs font-montserrat font-bold text-white/50 uppercase tracking-widest mb-3">Phone Number</label>
                 <input 
                   type="tel" 
                   name="phone"
@@ -166,31 +166,31 @@ export default function InviteForm() {
                   inputMode="numeric"
                   maxLength={10}
                   required
-                  className={`w-full bg-rush-black border-2 ${errors.phone ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
+                  className={`w-full bg-rush-black border-2 ${errors.phone ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-montserrat font-medium`}
                   placeholder="9876543210"
                 />
-                <p className={`text-xs mt-2 uppercase tracking-wider ${errors.phone ? 'text-rush-red' : 'text-white/30'}`}>
+                <p className={`text-xs mt-2 font-montserrat uppercase tracking-wider ${errors.phone ? 'text-rush-red' : 'text-white/30'}`}>
                   {errors.phone || `${formData.phone.length}/10 digits`}
                 </p>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-3">Email Address (Optional)</label>
+                <label className="block text-xs font-montserrat font-bold text-white/50 uppercase tracking-widest mb-3">Email Address (Optional)</label>
                 <input 
                   type="email" 
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full bg-rush-black border-2 ${errors.email ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-medium`}
+                  className={`w-full bg-rush-black border-2 ${errors.email ? 'border-rush-red' : 'border-white/10'} focus:border-rush-red text-white placeholder:text-white/30 px-6 py-5 outline-none transition-colors duration-300 font-montserrat font-medium`}
                   placeholder="JOHN@EXAMPLE.COM"
                 />
-                {errors.email && <p className="text-rush-red text-xs mt-2 uppercase tracking-wider">{errors.email}</p>}
+                {errors.email && <p className="text-rush-red font-montserrat text-xs mt-2 uppercase tracking-wider">{errors.email}</p>}
               </div>
 
               <button 
                 type="submit"
                 disabled={loading}
-                className="w-full bg-rush-red text-white font-black tracking-widest uppercase py-6 text-lg hover:bg-white hover:text-rush-black transition-colors duration-300 mt-8 flex justify-between items-center px-8 group disabled:opacity-50"
+                className="w-full bg-rush-red text-white font-montserrat font-black tracking-widest uppercase py-6 text-lg hover:bg-white hover:text-rush-black transition-colors duration-300 mt-8 flex justify-between items-center px-8 group disabled:opacity-50"
               >
                 <span>{loading ? 'Processing...' : 'Confirm Attendance'}</span>
                 <span className="transform group-hover:translate-x-2 transition-transform duration-300">→</span>

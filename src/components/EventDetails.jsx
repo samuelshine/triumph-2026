@@ -25,13 +25,13 @@ export default function EventDetails() {
             {/* Date Block */}
             <div className="flex flex-col border-t-2 border-white/20 pt-6">
               <div className="flex items-center justify-between mb-8 text-white/70">
-                <span className="uppercase text-xs font-bold tracking-widest">Date</span>
+                <span className="uppercase text-xs font-montserrat font-bold tracking-widest">Date</span>
                 <Calendar className="w-5 h-5" />
               </div>
-              <div className="font-sans font-black text-4xl uppercase tracking-tight">
+              <div className="font-montserrat font-black text-4xl uppercase tracking-tight">
                 March 29
               </div>
-              <div className="font-sans font-semibold text-lg text-white/80 mt-2">
+              <div className="font-montserrat font-medium text-lg text-white/80 mt-2">
                 Sunday, 2026
               </div>
             </div>
@@ -39,13 +39,13 @@ export default function EventDetails() {
             {/* Time Block */}
             <div className="flex flex-col border-t-2 border-white/20 pt-6">
               <div className="flex items-center justify-between mb-8 text-white/70">
-                <span className="uppercase text-xs font-bold tracking-widest">Time</span>
+                <span className="uppercase text-xs font-montserrat font-bold tracking-widest">Time</span>
                 <Clock className="w-5 h-5" />
               </div>
-              <div className="font-sans font-black text-4xl uppercase tracking-tight">
+              <div className="font-montserrat font-black text-4xl uppercase tracking-tight">
                 6:00 PM
               </div>
-              <div className="font-sans font-semibold text-lg text-white/80 mt-2">
+              <div className="font-montserrat font-medium text-lg text-white/80 mt-2">
                 Doors open 5:30 PM
               </div>
             </div>
@@ -53,10 +53,10 @@ export default function EventDetails() {
             {/* Location Block */}
             <div className="flex flex-col border-t-2 border-white/20 pt-6">
               <div className="flex items-center justify-between mb-8 text-white/70">
-                <span className="uppercase text-xs font-bold tracking-widest">Location</span>
+                <span className="uppercase text-xs font-montserrat font-bold tracking-widest">Location</span>
                 <MapPin className="w-5 h-5" />
               </div>
-              <div className="font-sans font-black text-3xl uppercase tracking-tight leading-none mb-4">
+              <div className="font-montserrat font-black text-3xl uppercase tracking-tight leading-none mb-4">
                 City Harvest<br />Kothanur
               </div>
               <a

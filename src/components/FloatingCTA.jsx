@@ -63,7 +63,7 @@ export default function FloatingCTA() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.9 }}
           transition={{ duration: 0.25 }}
-          className={`fixed bottom-6 right-6 z-50 font-bold uppercase tracking-widest text-xs md:text-sm px-6 py-4 md:px-8 md:py-5 shadow-2xl transition-all duration-300 flex items-center gap-3 group ${STYLES[styleKey]}`}
+          className={`fixed bottom-6 right-6 z-50 font-montserrat font-bold uppercase tracking-widest text-xs md:text-sm px-6 py-4 md:px-8 md:py-5 shadow-2xl transition-all duration-300 flex items-center gap-3 group ${STYLES[styleKey]}`}
         >
           <span>Get Your Invite</span>
           <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>

@@ -16,12 +16,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center md:items-end text-xs font-bold tracking-widest text-white/50 uppercase space-y-4">
+        <div className="flex flex-col items-center md:items-end text-xs font-montserrat font-bold tracking-widest text-white/50 uppercase space-y-4">
           <a href="https://cityharvestag.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
             <img src="/ch-logo-white.png" alt="City Harvest" className="h-10 md:h-14 w-auto opacity-80 brightness-110" />
           </a>
           <div className="flex flex-col items-center md:items-end space-y-2">
-            <p className="text-white/30">&copy; {new Date().getFullYear()} City Harvest. All Rights Reserved.</p>
+            <p className="text-white/30 font-montserrat">&copy; {new Date().getFullYear()} City Harvest. All Rights Reserved.</p>
           </div>
         </div>
       </div>

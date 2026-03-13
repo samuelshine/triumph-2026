@@ -12,7 +12,7 @@ export default {
         'rush-dark': '#111111',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Montserrat', 'Inter', 'sans-serif'],
         heading: ['Syncopate', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       }
