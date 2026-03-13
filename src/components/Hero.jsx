@@ -2,88 +2,78 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col pt-8 md:pt-20 pb-12 overflow-hidden bg-rush-black border-b border-white/10">
-      {/* Video Background with Heavy Black/Grayscale Overlay */}
+    <section className="relative h-screen md:h-[100dvh] flex flex-col bg-rush-black border-b border-white/10 overflow-hidden">
+      {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute min-w-full min-h-full object-cover scale-105"
-        >
+        <video autoPlay loop muted playsInline className="absolute min-w-full min-h-full object-cover scale-105">
           <source src="/CITY-HARVEST-WORSHIP-BANNER.mp4" type="video/mp4" />
         </video>
-        {/* Stark darkening overlay to keep text readable */}
         <div className="absolute inset-0 bg-rush-black/60" />
       </div>
 
-      <div className="relative z-10 w-full flex-1 px-4 md:px-12 flex flex-col justify-between">
-
-        {/* Top Meta Area */}
+      <div className="relative z-10 w-full h-full px-6 md:px-12 flex flex-col">
+        {/* Top Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full flex justify-between items-center uppercase text-white/70 text-xs md:text-sm font-bold tracking-widest border-b border-white/20 pb-6"
+          className="w-full flex justify-between items-center py-6 md:py-8 border-b border-white/10"
         >
-          <div className="flex items-center gap-3">
-            <a href="https://cityharvestag.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
-              <img src="/ch-logo-white.png" alt="City Harvest" className="h-7 md:h-9 w-auto opacity-60 brightness-75" />
-            </a>
-            <span className="md:hidden">City Harvest<br />Presents</span>
-            <span className="hidden md:inline">City Harvest Presents</span>
-          </div>
-          <p className="text-right">A Call For<br />True Worshipers</p>
+          <a href="https://cityharvestag.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+            <img src="/ch-logo-white.png" alt="City Harvest" className="h-10 md:h-12 w-auto opacity-90 brightness-110" />
+          </a>
         </motion.div>
 
-        {/* Massive Typography */}
-        <div className="w-full mt-auto">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-heading font-bold text-rush-red text-[16vw] leading-[0.8] tracking-tighter uppercase mb-4 [-webkit-text-stroke:2px_#FF2E00] md:[-webkit-text-stroke:4px_#FF2E00]"
+        {/* Main Content */}
+        <div className="flex-1 flex items-center justify-center min-h-0 py-2 md:py-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1.1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="w-full h-full max-w-7xl flex items-center justify-center p-0"
           >
-            TRIUMPH
-          </motion.h1>
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-sans text-white text-3xl md:text-6xl font-black uppercase tracking-tight"
-          >
-            Night of Worship
-          </motion.h2>
+            {/* Screen Reader & AI Search Content */}
+            <div className="sr-only">
+              <h1>Triumph 2026: Night of Worship</h1>
+              <p>Presented by City Harvest AG Church. A Call for True Worshipers. Join us for a powerful evening of praise and worship during Passion Week.</p>
+            </div>
+            
+            <img 
+              src="/triumph-text.png" 
+              alt="Triumph: Night of Worship - A Call for True Worshipers" 
+              className="max-w-[100vw] max-h-[80vh] md:max-h-[90vh] object-contain brightness-125 drop-shadow-[0_0_60px_rgba(218,131,7,0.3)]"
+            />
+          </motion.div>
         </div>
 
-        {/* CTA and Info Grid Row */}
+        {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mt-12"
+          className="w-full flex flex-col-reverse md:flex-row items-center md:items-end justify-between pt-6 pb-12 md:pb-12 border-t border-white/5 gap-8 md:gap-0"
         >
+          {/* Left: CTA */}
           <a
             href="#invite"
-            className="flex items-center gap-4 bg-rush-red text-white font-bold uppercase tracking-widest px-8 py-5 hover:bg-white hover:text-rush-black transition-colors duration-300 group"
+            className="w-full md:w-auto flex items-center justify-center gap-6 bg-rush-red text-white font-black uppercase tracking-[0.2em] px-8 md:px-12 py-5 md:py-6 hover:bg-white hover:text-rush-black transition-all duration-500 group shadow-[0_20px_50px_rgba(218,131,7,0.3)] text-xs md:text-sm whitespace-nowrap"
           >
             <span>Get Your Invite</span>
             <span className="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
           </a>
 
-          <div className="flex gap-12 text-white/80 uppercase text-xs md:text-sm font-semibold tracking-widest">
+          {/* Right: Info */}
+          <div className="flex gap-12 md:gap-16 text-white uppercase text-base md:text-sm font-black tracking-[0.2em] text-center md:text-right">
             <div>
-              <span className="block text-white/50 mb-1">Date</span>
-              <span className="text-white">Mar 29, 2026</span>
+              <span className="block text-white/30 text-[10px] md:text-[11px] font-bold mb-1">Date</span>
+              <span className="text-white">Mar 29</span>
             </div>
             <div>
-              <span className="block text-white/50 mb-1">Time</span>
+              <span className="block text-white/30 text-[10px] md:text-[11px] font-bold mb-1">Time</span>
               <span className="text-white">6:00 PM</span>
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );

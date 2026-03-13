@@ -4,18 +4,18 @@ export default function TheExperience() {
   const experiences = [
     {
       number: "01",
-      title: "Soul-Stirring Worship",
-      description: "Experience a powerful time of praise and adoration led by the City Harvest Worship team.",
+      title: "Dynamic Worship",
+      description: "Intimacy. Relationship. Revival.\nExperience the touch of God live never before through our soul-stirring praise & worship session led by the City Harvest Worship team.",
     },
     {
       number: "02",
-      title: "Immersive Readings",
-      description: "Journey through the Passion narrative with scripture readings that bring the story of Triumph to life.",
+      title: "Timeless Hymns",
+      description: "Listen. Tune In. Connect.\nDraw closer to the heart of God through the power of sacred song. Let the profound lyrics of ages past lead you into a deeper understanding of His character.",
     },
     {
       number: "03",
       title: "Community of Believers",
-      description: "Gather with hungry hearts seeking God's presence, united in our love for the Savior.",
+      description: "Believe. Become. Belong.\nFind a prayerful, supportive, and inspiring community of believers at City Harvest AG Church. One big family rooted in God’s love.",
     }
   ];
 
@@ -23,7 +23,7 @@ export default function TheExperience() {
     <section className="py-24 px-4 bg-rush-black border-b border-white/10 relative overflow-hidden">
       {/* Decorative dashed line background crossing */}
       <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-white/5 z-0" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,7 +33,7 @@ export default function TheExperience() {
           className="mb-16 flex justify-between items-end border-b border-white/20 pb-6"
         >
           <h2 className="font-heading text-4xl md:text-6xl text-white uppercase tracking-tighter leading-none">
-            What To<br/>Expect
+            What To<br />Expect
           </h2>
           <span className="hidden md:block text-rush-red font-bold tracking-widest uppercase text-sm">
             [ The Experience ]
@@ -63,9 +63,9 @@ export default function TheExperience() {
                   <h3 className="text-2xl font-black text-white group-hover:text-rush-black uppercase tracking-tight mb-4 transition-colors duration-500">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 group-hover:text-rush-black/70 leading-relaxed font-medium transition-colors duration-500">
+                  <div className="text-white/60 group-hover:text-rush-black/70 leading-relaxed font-montserrat font-normal transition-colors duration-500 whitespace-pre-line">
                     {item.description}
-                  </p>
+                  </div>
                 </div>
               </motion.div>
             );

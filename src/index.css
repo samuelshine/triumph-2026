@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force Brand Color Update (Bypassing potential Tailwind build cache issues) */
+:root {
+  --rush-red: #da8307;
+}
+
+.text-rush-red {
+  color: var(--rush-red) !important;
+}
+
+.bg-rush-red {
+  background-color: var(--rush-red) !important;
+}
+
+.border-rush-red {
+  border-color: var(--rush-red) !important;
+}
+
+::selection {
+  background-color: var(--rush-red) !important;
+  color: white !important;
+}
+
+::-moz-selection {
+  background-color: var(--rush-red) !important;
+  color: white !important;
+}
+
+.selection\:bg-rush-red::selection {
+  background-color: var(--rush-red) !important;
+  color: white !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -15,20 +15,17 @@ export default function Narrative() {
             The Narrative
           </div>
           <h3 className="font-heading text-4xl md:text-6xl mb-12 uppercase leading-[0.9] tracking-tighter">
-            From Sacrifice <br/>To Victory
+            From Sacrifice <br />To Victory
           </h3>
-          <div className="space-y-8 text-xl md:text-3xl font-black uppercase tracking-tight leading-snug">
+          <div className="space-y-8 text-xl md:text-3xl font-montserrat font-normal normal-case tracking-tight leading-snug">
             <p>
-              The journey of Passion Week is one of profound sorrow giving way to unimaginable joy. 
-              From the heavy silence of Good Friday to the earth-shattering reality of the empty tomb—we are 
-              called to remember the price paid for our freedom.
+              City Harvest AG Church presents Triumph—a night of praise and worship, exhortation, and Christ-centered fellowship. Led by City Harvest Worship—a dynamic and Spirit-filled worship team of City Harvest AG Church, Triumph is aimed at transforming lives and touching the heart of Jesus through worship music.
             </p>
             <p className="text-rush-black/50">
-              Triumph is not merely an event; it is a gathering of hearts declaring the victory of the 
-              Resurrection. It is a night designed for true worshipers to lift their voices in unity.
+              Let us come together as a family for a powerful and meaningful evening of worship, prayer, and total surrender to our God. Come and celebrate the victory of our Lord Almighty during this Passion Week.
             </p>
             <p className="text-rush-red">
-              Come, let us bow down in reverence, and rise up in Triumph.
+              Come with an expectant heart and bring your friends and family to experience the fullness of God’s presence and glory. Be a part of the Triumph experience at City Harvest AG Church, Bangalore.
             </p>
           </div>
         </motion.div>
