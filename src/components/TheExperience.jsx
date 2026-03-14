@@ -5,7 +5,7 @@ export default function TheExperience() {
     {
       number: "01",
       title: "Dynamic Worship",
-      description: "Intimacy. Relationship. Revival.\nExperience the touch of God live never before through our soul-stirring praise & worship session led by the City Harvest Worship team.",
+      description: "Intimacy. Relationship. Revival.\nExperience the touch of God like never before through our soul-stirring praise & worship session led by the City Harvest Worship team.",
     },
     {
       number: "02",
